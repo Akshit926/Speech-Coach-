@@ -49,7 +49,7 @@ RESOLUTION_MARKERS = [
 ]
 
 
-def analyze_storytelling(text: str) -> dict:
+def analyze_storytelling(text: str, ner_results: dict = None, sentiment_data: dict = None) -> dict:
     """
     Analyze storytelling elements in the speech.
     
@@ -60,7 +60,8 @@ def analyze_storytelling(text: str) -> dict:
         return _empty_storytelling()
     
     # Get NER results
-    ner_results = extract_entities(text)
+    if ner_results is None:
+        ner_results = extract_entities(text)
     
     sentences = tokenize_sentences(text)
     text_lower = text.lower()
@@ -102,7 +103,8 @@ def analyze_storytelling(text: str) -> dict:
                 break
     
     # Detect emotional statements (sentences with strong sentiment)
-    sentiment_data = analyze_sentiment(text)
+    if sentiment_data is None:
+        sentiment_data = analyze_sentiment(text)
     emotional_sentences = [
         s for s in sentiment_data.get('sentence_sentiments', [])
         if abs(s.get('compound', 0)) > 0.5

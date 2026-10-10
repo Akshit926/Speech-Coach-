@@ -142,3 +142,26 @@ def safe_divide(numerator: float, denominator: float, default: float = 0.0) -> f
     if denominator == 0:
         return default
     return numerator / denominator
+
+
+def format_time(seconds: int) -> str:
+    """Format total seconds into 'X min Y sec' format."""
+    if not seconds or seconds <= 0:
+        return "0 min 0 sec"
+    minutes = int(seconds) // 60
+    rem_seconds = int(seconds) % 60
+    return f"{minutes} min {rem_seconds} sec"
+
+
+def get_score_badge(score: float) -> str:
+    """Get a Toastmasters-styled honor badge based on overall score."""
+    if score >= 90:
+        return "Distinguished Speaker (Gold)"
+    elif score >= 80:
+        return "Competent Communicator (Silver)"
+    elif score >= 70:
+        return "Proficient Speaker (Bronze)"
+    elif score >= 60:
+        return "Emerging Speaker"
+    else:
+        return "Developing Speaker"
