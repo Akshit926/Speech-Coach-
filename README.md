@@ -6,7 +6,6 @@
 [![Academic Project](https://img.shields.io/badge/PCCOE-Pune-orange.svg)](https://www.pccoepune.com/)
 
 > **Academic Mini-Project**  
-> **Course:** Natural Language Processing (NLP)  
 ---
 
 ## 📖 1. Project Overview
