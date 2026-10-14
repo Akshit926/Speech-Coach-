@@ -7,8 +7,6 @@
 
 > **Academic Mini-Project**  
 > **Course:** Natural Language Processing (NLP)  
-> **Department:** Computer Engineering (Artificial Intelligence & Machine Learning)   
-
 ---
 
 ## 📖 1. Project Overview
