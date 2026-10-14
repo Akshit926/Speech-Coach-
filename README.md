@@ -7,9 +7,7 @@
 
 > **Academic Mini-Project**  
 > **Course:** Natural Language Processing (NLP)  
-> **Department:** Computer Engineering (Artificial Intelligence & Machine Learning)  
-> **Class:** T.Y. B.Tech CSE (AI & ML)  
- 
+> **Department:** Computer Engineering (Artificial Intelligence & Machine Learning)   
 
 ---
 
