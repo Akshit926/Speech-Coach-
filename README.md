@@ -5,8 +5,6 @@
 [![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red.svg)](https://streamlit.io/)
 [![Academic Project](https://img.shields.io/badge/PCCOE-Pune-orange.svg)](https://www.pccoepune.com/)
 
-> **Academic Mini-Project**  
----
 
 ## 📖 1. Project Overview
 
